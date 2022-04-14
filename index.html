@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section">
+
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=775&q=80"
+                                    alt="">
+                            </figure>
+
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Ping Pong Score Keeper
+                            </p>
+
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-1"><span id="player1Score">0</span> to <span
+                                        id="player2Score">0</span>
+                                </h1>
+
+
+                                <div class="columns mb-3">
+                                    <div class="column">
+                                        <input class="input is-primary" name="pname" id="p1name" type="text"
+                                            placeholder="Enter Player-1 Name">
+                                    </div>
+                                    <div class="column">
+                                        <input class="input is-info" name="pname" id="p2name" type="text"
+                                            placeholder="Enter Player-2 Name">
+                                    </div>
+                                </div>
+
+                                <div class="notification is-success is-light show hide" id="success-msg">
+                                    <button class="delete"></button>
+                                    <strong class="display-name"></strong> has won the match.
+                                </div>
+                            </div>
+
+
+                            <p class="subtitle">Use the buttons below to keep score</p>
+                            <label for="playTo" class="label is-large is-inline">Playing To</label>
+                            <div class="select is-rounded">
+                                <select name="" id="playTo">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="card-footer">
+                        <button id="btn-1" class="is-primary card-footer-item button is-large">Player-1</button>
+                        <button id="btn-2" class="is-info card-footer-item button is-large">Player-2</button>
+                        <button id="reset" class="is-danger card-footer-item button is-large">Reset</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Adding sound logic -->
+
+    <audio data-key="64" src="sounds/openhat.wav"></audio>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

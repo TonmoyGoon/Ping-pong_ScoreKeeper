@@ -1,0 +1,20 @@
+.notification.show{
+    display: block;
+}
+
+.notification.hide{
+    display: none;
+}
+
+#success-msg{
+    animation: hideAnimation 0s ease-in 4s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
