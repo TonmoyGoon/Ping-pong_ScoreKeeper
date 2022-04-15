@@ -75,7 +75,7 @@ function reset() {
         p.display.classList.remove("has-text-success", "has-text-danger")
         p.button.disabled = false;
         displaySuccessMsg.classList.add("hide");
-        location.reload();
+        // location.reload();
         resetName();
     }
 }
